@@ -1,0 +1,256 @@
+/* 一屏的高度 */
+html,body,.main{
+    height:100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}  
+
+.swiper-button-next{
+    width:0.6rem;
+    height:0.6rem;
+    background:url("../images/arrow.png") center center no-repeat;
+    background-size:cover;
+    position:absolute;
+    bottom:0.4rem;
+    left:50%;
+    margin-left:-0.25rem;
+    top:auto;
+    animation: slideInUp 1s infinite;
+}
+
+@-webkit-keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+/* 第一页 */
+.page1>img{
+    position:absolute;
+}
+.page1{
+   background:url("../images/fen.jpg");
+   position:relative;
+}
+.sehun{
+    width:6rem;
+    height:2rem;
+    right:0;
+    top:0.54rem;
+}
+
+.ta{
+    widows: 3.58rem;;
+    height:1.83rem;
+    left:0.6rem;
+    top:3.8rem;
+}
+
+.zhen{
+    width:3.17rem;
+    height:1.78rem;
+    right:0.4rem;
+    top:5.5rem;
+}
+.shixun{
+    widows: 0.7rem;
+    height:7.5rem;
+    bottom:0;
+    left:0.5rem;
+}
+
+/* 第二页 */
+.page2{
+    position:relative;
+}
+.page2>img{
+    position:absolute;
+}
+.page2{
+    background:url("../images/bizhi.jpg") center center no-repeat;
+    background-size:cover;
+}
+.wenzi{
+    width:5.21rem;
+    height:2.08rem;
+    left:0.8rem;
+    top:1.3rem;
+}
+
+.busan{
+    width:2.26rem;
+    height:1.82rem;
+    right:0.6rem;
+    top:1.2rem;
+}
+
+.se{
+    width:2.24rem;
+    height:2.96rem;
+    right:0.5rem;
+    top:5rem;
+}
+
+.textContent{
+    position:absolute;
+    font-size:0.32rem;
+    font-family: monospace;
+    left:0.8rem;
+    top:3.5rem;
+    line-height:0.64rem;
+    color:#fff;
+}
+
+/* page3 */
+.page3{
+    position:relative;
+    background:url("../images/bizhi.jpg");
+    background-size:100% 100%;
+}
+.page3>img{
+    position: absolute;
+}
+.jvshou{
+ width:3.2rem;
+ height:3.2rem;
+ top:0.5rem;
+ left:50%;
+ margin-left:-2.86rem;
+}
+.shudong{
+  width: 2.27rem;
+  height:4.07rem;
+  top: 0.5rem;
+  left: 50%;
+  margin-left:1.5rem;
+}
+.page3 .xin{
+  width: 1.98rem;
+  height: 2.26rem;
+  left:5.5rem;
+  bottom:0;
+}
+
+.blackBoard{
+   position: absolute;
+   width:4.38rem;
+   height:4rem;
+   background:url("../images/pai.png") center center no-repeat;
+   background-size:100% 100%;
+   top:50%;
+   left:50%;
+   margin-left:-2.78rem;
+   margin-top:-2.02rem;
+   padding:0.8rem;
+   padding-left:0.6rem;
+   box-sizing:border-box;
+}
+.erweima{
+   width:2.3rem;
+   height:2.2rem;
+   background:url("../images/erweima.png") center center no-repeat;
+   background-size:cover;
+   float:left;
+   margin-left: 0.5rem;
+}
+.tips{
+   float:left;
+   margin-top:1rem;
+   margin-left:1rem;
+}
+.tips p{
+   font-size:0.36rem;
+   color:rgb(255, 255, 255);
+   
+   line-height:0.6rem;
+}
+
+.music{
+   width:1rem;
+   height:1rem;
+   background:url("../images/music.jpg") center center no-repeat;
+   background-size:cover;
+   position: absolute;
+   left:0.2rem;
+   top:0.2rem;
+   z-index:999;
+   border-radius:50%;
+   animation: music 1s linear infinite;
+
+}
+@keyframes music{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+  
+  @-webkit-keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+
